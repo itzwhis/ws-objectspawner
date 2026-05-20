@@ -1,0 +1,12 @@
+CREATE TABLE IF NOT EXISTS `objectspawner_objects` (
+    `id` INT(11) NOT NULL AUTO_INCREMENT,
+    `model` VARCHAR(100) NOT NULL,
+    `x` FLOAT NOT NULL,
+    `y` FLOAT NOT NULL,
+    `z` FLOAT NOT NULL,
+    `heading` FLOAT NOT NULL DEFAULT 0,
+    `frozen` TINYINT(1) NOT NULL DEFAULT 1,
+    `created_by` VARCHAR(60) DEFAULT NULL,
+    `created_at` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
